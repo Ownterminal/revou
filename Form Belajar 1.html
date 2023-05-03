@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <section id="message-us">
+        <div class="container">
+            <h1>Latihan Form</h1>
+            <div class="row row-top"> 
+                <style>
+                .row-top {
+                    flex-direction: column;
+                  }
+                  .row {
+                    display: flex;
+                  } 
+                </style> 
+                <div class="column">
+                    <div class="message-form">
+                        <form id="msg-form" name="msg-form" onsubmit="return validateForm()"> 
+                            
+                            <div class="row">
+                                <style>
+                                    element {
+                                    }
+                                    .row {
+                                    display: flex;
+                                    }
+                                </style>
+                                <div class="column-l">
+                                    <label class="label-l" for="nama">Nama</label><br>
+                                    <label class="label-l" for="tanggal">Tanggal lahir</label><br>
+                                    <label class="label-l" for="kelamin">Jenis kelamin</label><br>
+                                    <label class="label-l" for="pesan">Pesan</label><br>
+                                </div>
+                                <div class="column-mid">
+                                    <b>: </b><br>
+                                    <b>: </b><br>
+                                    <b>: </b><br>
+                                    <b>: </b>
+                                </div>
+                                <div class="column-r">
+                                    <input class="label-r" type="text" id="nama" name="nama" placeholder="Nama" required=""><br>
+                                    <input class="label-rd" type="date" id="tanggal" placeholder="dd-mm-yyyy" name="tanggal" required=""><br>
+                                    <input class="radio-k" type="radio" id="laki" name="kelamin" value="laki" required="">
+                                    <label for="laki">Laki-Laki</label>
+                                    <input class="radio-k" type="radio" id="perempuan" name="kelamin" value="perempuan" required="">
+                                    <label for="perempuan">Perempuan</label><br>
+                                    <input class="label-p" type="text" id="pesan" name="pesan" placeholder="Pesan" required=""><br>
+                                </div>
+                            </div>
+                            <input class="btn-submit" type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="message-show">
+                        <style>
+                            .message-show {
+                            border: 2px;
+                                border-top-style: none;
+                                border-right-style: none;
+                                border-bottom-style: none;
+                                border-left-style: none;
+                            border-style: solid;
+                            width: 80%;
+                            padding-top: 3vh;
+                            padding-left: 5vh;
+                            padding-bottom: 8vh;
+                            }
+                            .message-show {
+                            width: 75%;
+                            flex-direction: column;
+                            margin-top: 2vh;
+                            }
+                        </style>
+                        <p>
+                            <b>Current time :</b> <span id="sender-time"></span>
+                            <br>
+                            <br>
+                            <b>Nama :</b> <span id="sender-nama"></span>
+                            <br>
+                            <b>Tanggal Lahir :</b> <span id="sender-tanggal"></span>
+                            <br>
+                            <b>Jenis Kelamin :</b> <span id="sender-kelamin"></span>
+                            <br>
+                            <b>Pesan :</b> <span id="sender-pesan"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+    <footer>
+        <p>Created By Ahmad Fauzan Ardiansyah</p>
+        <hr>
+    </footer>
+</html>
